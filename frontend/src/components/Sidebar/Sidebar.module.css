@@ -1,0 +1,18 @@
+.sidebar {
+  width: 220px;
+  padding: 16px;
+  border-right: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.title {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}

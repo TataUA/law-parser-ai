@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.highlight {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0 2px;
+  border-radius: 3px;
+}

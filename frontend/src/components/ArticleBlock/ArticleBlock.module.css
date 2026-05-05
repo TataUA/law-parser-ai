@@ -1,0 +1,22 @@
+.article {
+  margin-bottom: 10px;
+}
+
+.title {
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: var(--text-h);
+   
+}
+
+.title:hover {
+  color: var(--accent);
+}
+
+.paragraph {
+  margin-left: 12px;
+  margin-bottom: 4px;
+  color: var(--text);
+  
+}

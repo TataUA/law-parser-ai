@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  text-align: left;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text);
+
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  background: var(--accent-bg);
+}
+
+.active {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 500;
+}
+
+.empty {
+  font-size: 14px;
+  color: var(--text);
+  opacity: 0.6;
+}
