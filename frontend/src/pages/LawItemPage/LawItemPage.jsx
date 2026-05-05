@@ -21,7 +21,7 @@ function LawItemPage() {
   }, [id]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/laws/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/laws/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setLaw(data);
