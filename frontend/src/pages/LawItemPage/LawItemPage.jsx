@@ -10,6 +10,8 @@ function LawItemPage() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   const { selectedSubject, setSubjects, setSelectedSubject } = useFilters();
 
   const [law, setLaw] = useState(null);
@@ -21,7 +23,7 @@ function LawItemPage() {
   }, [id]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/laws/${id}`)
+    fetch(`${API_URL}/laws/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setLaw(data);

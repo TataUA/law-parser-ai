@@ -13,6 +13,8 @@ function LawsListPage() {
   const { setTags, selectedTag, setSelectedTag } = useFilters();
   const navigate = useNavigate();
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
   useEffect(() => {
     setSelectedTag(null);
   }, []);
@@ -26,7 +28,7 @@ function LawsListPage() {
   }, [search]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/laws`)
+    fetch(`${API_URL}/laws`)
       .then((res) => res.json())
       .then((data) => {
         setLaws(data);
